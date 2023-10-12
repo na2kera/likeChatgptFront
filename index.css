@@ -44,6 +44,11 @@ header {
 .chat {
   display: flex;
   flex-wrap: wrap;
+  /* 横幅を80%に設定 */
+  width: 90%;
+  height: 80%;
+  /* 水平方向に中央寄せ */
+  margin: 0 auto;
 }
 
 nav {
@@ -161,12 +166,10 @@ nav .inner ul li a:hover {
   display: flex;
 }
 
-.message-icon {
-  color: #90ee90;
-}
-.chat {
-  max-width: 600px;
-  margin: 0 auto;
+.message-me {
+  display: flex;
+  width: 100%;
+  text-align: right;
 }
 
 .message-text1 {
@@ -189,33 +192,48 @@ nav .inner ul li a:hover {
   max-width: 70%;
   border-radius: 1rem;
 }
-.message-icon {
+
+.message-text-me {
+  display: inline-block;
+  max-width: 70%;
+  border-radius: 1rem;
+  background-color: aqua;
+}
+
+.message-icon1 {
   width: 48px;
   height: 48px;
   text-align: center;
   line-height: 48px;
+  background-color: pink;
+}
+
+.message-icon2 {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  background-color: #90ee90;
+}
+
+.message-icon3 {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  background-color: blue;
+}
+
+.message-icon-me {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  background-color: aqua;
 }
 
 .list-group-item {
   background-color: white;
-}
-
-.chat {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.message-icon {
-  width: 48px;
-  height: 48px;
-  text-align: center;
-  line-height: 48px;
-}
-
-.message-text {
-  display: inline-block;
-  max-width: 70%;
-  border-radius: 1rem;
 }
 
 .input-field {
