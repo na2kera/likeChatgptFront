@@ -47,13 +47,12 @@ header {
 }
 
 nav {
-  width: 20%;
+  width: 220px;
   position: fixed;
   display: block;
-  justify-content: center;
-  /* アイテムを水平方向に中央に配置 */
+  justify-content: center; /* アイテムを水平方向に中央に配置 */
   color: #a9a9a9;
-  background-color: #282828;
+  background-color: black;
   top: 0;
   left: 0;
   bottom: 0;
@@ -67,27 +66,8 @@ nav {
   opacity: 1;
 }
 
-nav .nav_header,
 nav .inner {
-  padding: 10px;
-}
-
-.menu li:first-child {
-  flex: 3;
-  /* Sets a flex-grow value of 3 for the first item */
-}
-
-.menu li:last-child {
-  flex: 1;
-  /* Sets a flex-grow value of 1 for the second item */
-}
-
-nav .nav_header .menu {
-  list-style: none;
-  margin: 0;
-  padding: 0px;
-  display: flex;
-
+  padding: 25px;
 }
 
 nav .inner ul {
@@ -101,56 +81,18 @@ nav .inner ul li {
   border-bottom: 1px solid #333;
 }
 
-nav .nav_header .menu li {
-  width: 100%;
-  border: solid 1px #FFFFFF;
-  border-radius: 10px;
-  margin-right: 2%;
-}
-
-nav .nav_header .menu li a,
-nav .inner ul li a,
-nav .inner .member li,
-nav .nav_footter {
+nav .inner ul li a {
   display: block;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #333;
   font-size: 14px;
   padding: 1rem;
   transition-duration: 0.2s;
-  text-align: center;
 }
 
-nav .display_room {
-  border-top: solid 1px #FFFFFF;
-  border-bottom: solid 1px #FFFFFF;
+nav .inner ul li a:hover {
+  background-color: #e4e4e4;
 }
-
-nav .display_room li a {
-  margin: 0.5rem 0;
-}
-
-
-nav .nav_footter {
-  align-items: flex-end;
-}
-
-nav .inner ul li a:hover,
-nav .inner .member li:hover {
-  background-color: #76A1B8;
-  color: #FFFFFF;
-  opacity: 0.4;
-}
-
-.nav_footter {
-  position: fixed;
-  /* or you can use absolute if that fits your design better */
-  bottom: 0;
-  /* optional: for better visibility */
-  text-align: center;
-  /* optional: to center the text */
-}
-
 
 .toggle-btn {
   display: none;
@@ -222,7 +164,6 @@ nav .inner .member li:hover {
 .message-icon {
   color: #90ee90;
 }
-
 .chat {
   max-width: 600px;
   margin: 0 auto;
@@ -248,7 +189,6 @@ nav .inner .member li:hover {
   max-width: 70%;
   border-radius: 1rem;
 }
-
 .message-icon {
   width: 48px;
   height: 48px;
@@ -289,8 +229,7 @@ nav .inner .member li:hover {
 .textbox {
   width: 100%;
   height: 60px;
-  border: none;
-  /* 枠線を無効にする */
+  border: none; /* 枠線を無効にする */
 }
 
 .input-field .form p {
@@ -307,9 +246,7 @@ nav .inner .member li:hover {
 .input-field .form .botton {
   position: absolute;
   top: 0;
-  left: 90%;
-  /* または、適切な位置に設定 */
-  border: none;
-  /* 枠線を無効にする */
+  left: 90%; /* または、適切な位置に設定 */
+  border: none; /* 枠線を無効にする */
   background-color: #c0c0c0;
 }

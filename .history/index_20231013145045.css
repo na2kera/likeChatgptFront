@@ -72,16 +72,6 @@ nav .inner {
   padding: 10px;
 }
 
-.menu li:first-child {
-  flex: 3;
-  /* Sets a flex-grow value of 3 for the first item */
-}
-
-.menu li:last-child {
-  flex: 1;
-  /* Sets a flex-grow value of 1 for the second item */
-}
-
 nav .nav_header .menu {
   list-style: none;
   margin: 0;
@@ -110,29 +100,13 @@ nav .nav_header .menu li {
 
 nav .nav_header .menu li a,
 nav .inner ul li a,
-nav .inner .member li,
-nav .nav_footter {
+nav .inner .member li {
   display: block;
   text-decoration: none;
   color: #FFFFFF;
   font-size: 14px;
   padding: 1rem;
   transition-duration: 0.2s;
-  text-align: center;
-}
-
-nav .display_room {
-  border-top: solid 1px #FFFFFF;
-  border-bottom: solid 1px #FFFFFF;
-}
-
-nav .display_room li a {
-  margin: 0.5rem 0;
-}
-
-
-nav .nav_footter {
-  align-items: flex-end;
 }
 
 nav .inner ul li a:hover,
@@ -143,14 +117,17 @@ nav .inner .member li:hover {
 }
 
 .nav_footter {
-  position: fixed;
-  /* or you can use absolute if that fits your design better */
-  bottom: 0;
-  /* optional: for better visibility */
-  text-align: center;
-  /* optional: to center the text */
+  align-items: flex-end;
 }
 
+nav .nav_footter p {
+  /* todo: 下からの距離にする */
+  padding: 1rem;
+  /* align-items: flex-end; */
+  padding: 0;
+  font-size: 14px;
+  color: #FFFFFF;
+}
 
 .toggle-btn {
   display: none;

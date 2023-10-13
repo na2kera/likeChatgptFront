@@ -72,16 +72,6 @@ nav .inner {
   padding: 10px;
 }
 
-.menu li:first-child {
-  flex: 3;
-  /* Sets a flex-grow value of 3 for the first item */
-}
-
-.menu li:last-child {
-  flex: 1;
-  /* Sets a flex-grow value of 1 for the second item */
-}
-
 nav .nav_header .menu {
   list-style: none;
   margin: 0;
@@ -126,9 +116,6 @@ nav .display_room {
   border-bottom: solid 1px #FFFFFF;
 }
 
-nav .display_room li a {
-  margin: 0.5rem 0;
-}
 
 
 nav .nav_footter {

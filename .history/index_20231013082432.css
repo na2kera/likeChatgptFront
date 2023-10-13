@@ -53,7 +53,7 @@ nav {
   justify-content: center;
   /* アイテムを水平方向に中央に配置 */
   color: #a9a9a9;
-  background-color: #282828;
+  background-color: black;
   top: 0;
   left: 0;
   bottom: 0;
@@ -69,25 +69,7 @@ nav {
 
 nav .nav_header,
 nav .inner {
-  padding: 10px;
-}
-
-.menu li:first-child {
-  flex: 3;
-  /* Sets a flex-grow value of 3 for the first item */
-}
-
-.menu li:last-child {
-  flex: 1;
-  /* Sets a flex-grow value of 1 for the second item */
-}
-
-nav .nav_header .menu {
-  list-style: none;
-  margin: 0;
-  padding: 0px;
-  display: flex;
-
+  padding: 25px;
 }
 
 nav .inner ul {
@@ -101,56 +83,21 @@ nav .inner ul li {
   border-bottom: 1px solid #333;
 }
 
-nav .nav_header .menu li {
-  width: 100%;
-  border: solid 1px #FFFFFF;
-  border-radius: 10px;
-  margin-right: 2%;
-}
-
 nav .nav_header .menu li a,
 nav .inner ul li a,
-nav .inner .member li,
-nav .nav_footter {
+nav .inner .member li {
   display: block;
   text-decoration: none;
   color: #FFFFFF;
   font-size: 14px;
   padding: 1rem;
   transition-duration: 0.2s;
-  text-align: center;
-}
-
-nav .display_room {
-  border-top: solid 1px #FFFFFF;
-  border-bottom: solid 1px #FFFFFF;
-}
-
-nav .display_room li a {
-  margin: 0.5rem 0;
-}
-
-
-nav .nav_footter {
-  align-items: flex-end;
 }
 
 nav .inner ul li a:hover,
 nav .inner .member li:hover {
   background-color: #76A1B8;
-  color: #FFFFFF;
-  opacity: 0.4;
 }
-
-.nav_footter {
-  position: fixed;
-  /* or you can use absolute if that fits your design better */
-  bottom: 0;
-  /* optional: for better visibility */
-  text-align: center;
-  /* optional: to center the text */
-}
-
 
 .toggle-btn {
   display: none;

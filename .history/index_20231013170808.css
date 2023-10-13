@@ -72,16 +72,6 @@ nav .inner {
   padding: 10px;
 }
 
-.menu li:first-child {
-  flex: 3;
-  /* Sets a flex-grow value of 3 for the first item */
-}
-
-.menu li:last-child {
-  flex: 1;
-  /* Sets a flex-grow value of 1 for the second item */
-}
-
 nav .nav_header .menu {
   list-style: none;
   margin: 0;
@@ -118,18 +108,7 @@ nav .nav_footter {
   font-size: 14px;
   padding: 1rem;
   transition-duration: 0.2s;
-  text-align: center;
 }
-
-nav .display_room {
-  border-top: solid 1px #FFFFFF;
-  border-bottom: solid 1px #FFFFFF;
-}
-
-nav .display_room li a {
-  margin: 0.5rem 0;
-}
-
 
 nav .nav_footter {
   align-items: flex-end;
@@ -146,10 +125,14 @@ nav .inner .member li:hover {
   position: fixed;
   /* or you can use absolute if that fits your design better */
   bottom: 0;
+  width: 100%;
+  background-color: #f9f9f9;
   /* optional: for better visibility */
   text-align: center;
   /* optional: to center the text */
 }
+
+
 
 
 .toggle-btn {
