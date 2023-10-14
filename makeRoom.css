@@ -1,0 +1,104 @@
+body {
+    background-color: #282828;
+    color: #E1E1E1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 5rem auto 2rem auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 2rem auto 1rem 4rem;
+    font-weight: bold;
+}
+
+.input1,
+.input2 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.title1 {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 70%;
+    height: 3rem;
+    margin: 0 auto 4rem auto;
+    border: 1px solid #E1E1E1;
+    background-color: transparent;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+}
+
+.select-llm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 垂直方向にも中央揃えにする */
+    margin-bottom: 1rem;
+}
+
+.form-check {
+    margin-right: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    /* チェックボックスとラベルを横並びにする */
+    align-items: center;
+    /* 垂直方向に中央揃えにする */
+}
+
+.form-check-input {
+    /* 塗りつぶしなし */
+    background-color: #282828;
+    border: 1px solid #E1E1E1;
+    margin-right: 1rem;
+    /* 角の丸みなし */
+    border-radius: 0;
+}
+
+.buttom-component {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.btn-outline-primary {
+    width: 25.8125rem;
+    height: 4.4375rem;
+    flex-shrink: 0;
+    font-size: 1.875rem;
+    margin-right: 5rem;
+}
+
+.create-button {
+    border: 1px solid #9EC3BC;
+    color: #9EC3BC;
+}
+
+.cancel-button {
+    border: 1px solid #EADFCA;
+    color: #EADFCA;
+}
+
+.create-button:hover {
+    background-color: #9EC3BC;
+    color: #282828;
+}
+
+.cancel-button:hover {
+    background-color: #EADFCA;
+    color: #282828;
+}
