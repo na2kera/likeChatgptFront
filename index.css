@@ -25,15 +25,17 @@ header {
 
 .container {
   display: flex;
-  overflow-y: scroll;
   justify-content: space-around;
+  min-height: 100vh;
+  /* コンテナ要素に最小の高さを設定 */
+  overflow-y: auto;
 }
 
 .main {
   position: fixed;
   top: 100px;
   width: 100%;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   height: 100vh;
   box-sizing: border-box;
   padding: 20px;
@@ -191,6 +193,7 @@ nav .inner .member li:hover {
   bottom: 4px;
 }
 
+
 .open #mask {
   display: block;
   background-color: #000;
@@ -202,6 +205,7 @@ nav .inner .member li:hover {
   opacity: 0.8;
   cursor: pointer;
 }
+
 
 .sidebar {
   left: 0;
@@ -228,9 +232,10 @@ nav .inner .member li:hover {
   display: flex;
   width: 100%;
   text-align: right;
+}
 
 .message-icon {
-  color: #90ee90;
+  color: #EADFCA;
 }
 
 .chat {
@@ -239,21 +244,28 @@ nav .inner .member li:hover {
 }
 
 .message-text1 {
-  background-color: pink;
+  background-color: #76A1B8;
   display: inline-block;
   max-width: 70%;
   border-radius: 1rem;
 }
 
 .message-text2 {
-  background-color: #90ee90;
+  background-color: #EADFCA;
   display: inline-block;
   max-width: 70%;
   border-radius: 1rem;
 }
 
 .message-text3 {
-  background-color: blue;
+  background-color: #254678;
+  display: inline-block;
+  max-width: 70%;
+  border-radius: 1rem;
+}
+
+.message-text4 {
+  background-color: #9EC3BC;
   display: inline-block;
   max-width: 70%;
   border-radius: 1rem;
@@ -263,15 +275,15 @@ nav .inner .member li:hover {
   display: inline-block;
   max-width: 70%;
   border-radius: 1rem;
-  background-color: aqua;
+  background-color: #BBE3F5;
 }
-.message-icon {
 
+.message-icon1 {
   width: 48px;
   height: 48px;
   text-align: center;
   line-height: 48px;
-  background-color: pink;
+  background-color: #76A1B8;
 }
 
 .message-icon2 {
@@ -279,7 +291,7 @@ nav .inner .member li:hover {
   height: 48px;
   text-align: center;
   line-height: 48px;
-  background-color: #90ee90;
+  background-color: #EADFCA;
 }
 
 .message-icon3 {
@@ -287,7 +299,15 @@ nav .inner .member li:hover {
   height: 48px;
   text-align: center;
   line-height: 48px;
-  background-color: blue;
+  background-color: #254678;
+}
+
+.message-icon4 {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  background-color: #9EC3BC;
 }
 
 .message-icon-me {
@@ -295,7 +315,7 @@ nav .inner .member li:hover {
   height: 48px;
   text-align: center;
   line-height: 48px;
-  background-color: aqua;
+  background-color: #BBE3F5;
 }
 
 .list-group-item {
@@ -308,32 +328,38 @@ nav .inner .member li:hover {
 
 .form {
   width: 100%;
-}
-
-.textbox {
-  width: 100%;
-  height: 60px;
-  border: none;
-  /* 枠線を無効にする */
-}
-
-.input-field .form p {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .input-field .form .textbox {
-  position: absolute;
-  top: 0;
+  width: 50%;
+  height: 60px;
+  border: none;
+  /* transform: translate(-50%, -50%); */
   background-color: #c0c0c0;
   border-radius: 1rem;
+  margin-right: 1rem;
 }
 
-.input-field .form .botton {
-  position: absolute;
-  top: 0;
-  left: 90%;
+.textbox::placeholder {
+  text-indent: 10px;
+  /* プレースホルダーの右側の余白を調整 */
+}
+
+.input-field .form .button {
   /* または、適切な位置に設定 */
   border: none;
   /* 枠線を無効にする */
   background-color: #c0c0c0;
+  border-radius: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+
+}
+
+.input-field .form .button svg {
+  width: 30px;
+  height: 30px;
 }
